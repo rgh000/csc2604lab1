@@ -34,4 +34,4 @@ S and SM2_50:  (0.37902952506712595, 0.002011010593492061)
 S and SM2_100:  (0.335235564310977, 0.006771711589437011)
 
 
-The Pearson correlation scores show that there is definitely a correlation, albeit not a very strong one. I suspect this is because we are only using bigram counts and because we only used the most frequent 5000 words (and there are some words which might be meaningless like abbreviations). I also observed that the correlation score for the matrix with PPMI's was worse than the correlation score for the matrix with raw counts, which I did not expect and perhaps I made a mistake in calculating PPMI's.
+The Pearson correlation scores show that there is definitely a correlation, albeit not a very strong one. I suspect this is because we are only using bigram counts and because we only used the most frequent 5000 words (and there are some words which might be meaningless like abbreviations). I also observed that the correlation score for the matrix with PPMI's was worse than the correlation score for the matrix with raw counts, which I did not expect and it is possible I made a mistake in calculating PPMI's.
