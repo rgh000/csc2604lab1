@@ -4,7 +4,7 @@ Code is in file lab1.py with comments indicating which piece of code accomplishe
 
 Notes:
 
-Because there were only 6 pairs {(coast, forest), (coast, hill), (car, journey), (food, fruit), (coast, shore), (automobile, car)} from the set in table RG65 that had both words occuring in my top 5000, it was not enough data to work with, since everything comes from the 5000x5000 array of bigram data. The data for just these 6 pairs without modifying the most frequent 5000 is below, and does not show anything very meaningful:
+Because there were only 6 pairs {(coast, forest), (coast, hill), (car, journey), (food, fruit), (coast, shore), (automobile, car)} from the set in table RG65 that had both words occuring in my top 5000, it was not enough data to work with, since everything comes from the 5000x5000 matrix of bigram data. The data for just these 6 pairs without modifying the most frequent 5000 is below, and does not show anything very meaningful:
 
 Cosine Similarities:
 
@@ -18,6 +18,7 @@ S and SM2_50:  (0.06061063954296708, 0.9091953718121875)
 
 S and SM2_100:  (-0.17026376582871552, 0.747072303255742)
 
+Note: The first value in the cosine similarity tuples is the Pearson correlation coefficient and the second value is the 2-tailed p value. The closer to 1 the Pearson coefficient, the stronger the positive correlation; the closer to -1 the stronger the negative correlation.
 
 Instead, I decided to replace some of the words in the most frequent 5000 with the rest of the words in table RG65 so that I could collecect some data for every pair of words. It ended up being the 4970 most frequent words plus 30 words from table RG65 which were not already in the top 5000. The word 'serf' never appears in the Brown Corpus, so I omitted the pair (serf, slave) from the analysis. The improved analysis for all pairs is below:
 
